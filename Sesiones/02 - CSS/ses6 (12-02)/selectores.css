@@ -1,0 +1,24 @@
+/* Selectores */
+
+/* Básicos */
+* { /* Universal */
+    /* Declaración */
+}
+
+h1 { /* De tipo o etiqueta */
+    /* Declaración */
+}
+
+#identificador { /* Por identificador */
+    /* Declaración */
+}
+
+/* Propiedad color */
+p {
+    color: initial;
+    text-indent: 10%;
+    text-shadow: 10px 20px rgba(0, 0, 0, 50%);
+    white-space: nowrap;
+    direction: rtl;
+    text-decoration: dashed;
+}

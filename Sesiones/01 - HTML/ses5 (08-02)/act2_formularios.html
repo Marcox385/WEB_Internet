@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 - Formularios</title>
+</head>
+
+<body>
+    <h1>Ejercicio de html</h1>
+    <p>Debes crear un documento similar a este</p>
+    <ol>
+        <li>Crear un formulario que pueda mandar un correo electrónico al profesor</li>
+        <pre>   &lt;form enctype="text/plain" method="post" action="mailto:marco.cordero@universidad-une.com?subject=ejercicio"&gt;</pre>
+        <li>Utiliza en 1 y 2 un label</li>
+        <li>Asigna values en radio buttons</li>
+        <li>En todos los inputs asigna el atributo name</li>
+        <li><i>No es necesario mandar el correo, solo demostrar que sí se puede hacer</i></li>
+        <li>Pon en algún campo un <i>tooltip</i> (atributo <i>title</i>)</li>
+    </ol>
+    <hr>
+    <h2>Formularios:</h2>
+    <p>Agradecemos tus comentarios</p>
+    <form enctype="text/plain" method="post" action="mailto:marco.cordero@universidad-une.com?subject=ejercicio">
+        <ol>
+            <li>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" title="Introduce tu nombre">
+            </li>
+            <li>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad">
+            </li>
+            <li>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+            </li>
+            <li>
+                ¿Cuál es tu carrera? <br>
+                <input type="radio" name="sr" value="iec">
+                Ing en Computación
+                <input type="radio" name="sr" value="psi" checked>
+                Psicología
+            </li>
+            <li>
+                ¿Qué cosas ya sabes de desarrollo web? <br>
+                <input type="checkbox" name="sc" value="html"> HTML <br>
+                <input type="checkbox" name="sc" value="css"> CSS <br>
+                <input type="checkbox" name="sc" value="js"> Javascript <br>
+                <input type="checkbox" name="sc" value="node"> Node.js <br>
+                <label for="dasw_alt">Otro:</label>
+                <input type="text" name="dasw_alt" id="dasw_alt">
+            </li>
+            <li>
+                ¿Cómo evalúas al profesor en sus primeras sesiones? <br>
+                0 <input type="range" name="calificacion" id="calificacion" min="0" max="10"> 10
+            </li>
+            <li>
+                Sugerencia, comentario, expectativas: <br>
+                <textarea name="sugerencia" id="sugerencia" cols="30" rows="10" placeholder="Sugerencia">Más prácticas y más tareas</textarea>
+            </li>
+        </ol>
+        <input type="submit" value="Enviar correo">
+    </form>
+</body>
+
+</html>

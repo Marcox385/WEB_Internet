@@ -1,0 +1,6 @@
+# Archivos específicos
+*.mp4
+
+# Directorios específicos
+Referencias/
+node_modules/

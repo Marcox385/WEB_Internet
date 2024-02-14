@@ -1,0 +1,11 @@
+/* Comentario (única manera) */
+
+/* REGLA */
+/* Inicio de declaración */
+p { /* Selector */
+    /* Propiedad y valor */
+    color: white;
+    text-align: center;
+}
+/* Fin de declaración */
+

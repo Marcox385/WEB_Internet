@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nth p:nth-child(-2n+5) {
+            font-weight: 900;
+            font-size: larger;
+            color: red;
+        }
+
+        thead tr {
+            background-color: red;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: coral;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: brown;
+        }
+
+        p::after {
+            content: ".";
+        }
+    </style>
+</head>
+<body>
+    <div id="nth">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fila 1 V1</td>
+                <td>Fila 1 V2</td>
+            </tr>
+            <tr>
+                <td>Fila 2 V1</td>
+                <td>Fila 2 V2</td>
+            </tr>
+            <tr>
+                <td>Fila 2 V1</td>
+                <td>Fila 2 V2</td>
+            </tr>
+            <tr>
+                <td>Fila 2 V1</td>
+                <td>Fila 2 V2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Contenido</p>
+    <hr>
+</body>
+</html>

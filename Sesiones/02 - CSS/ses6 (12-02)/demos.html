@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 6 - Demostración CSS</title>
+    <style>
+        /* body {
+            background-image: url('https://www.universidad-une.com/web/image/website/1/logo?unique=a92afd2');
+            background-repeat: space;
+        } */
+
+        #wiki {
+            color: green;
+        }
+
+        #wiki:hover {
+            color: orange;
+        }
+
+        a {
+            color: purple;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .paragraph {
+            background-color: black;
+            /* color: rgba(0, 255, 255, 1); */
+        }
+
+        div p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: 100;
+            /* direction: rtl; */
+            /* letter-spacing: 40px;
+            text-align: center;
+            text-decoration: underline wavy; */
+            text-indent: 100px;
+            text-shadow: 15px 20px 10px black;
+            text-transform: capitalize;
+            /* white-space: pre; */
+            word-spacing: 100px;
+        }
+
+        div#ejemplo {
+            color: green !important;
+        }
+
+        div#ejemplo #cafe {
+            color: brown
+        }
+
+        #verde {
+            color: initial;
+            font-family: inherit;
+        }
+
+        input[type="text"] {
+            background-color: aqua;
+        }
+
+        p[class~="clase2"] {
+            color: gray !important;
+        }
+
+        p[class^="p"] {
+            color: pink !important;
+        }
+
+        p[class$="o"] {
+            color: red !important;
+        }
+
+        p[class*="x"] {
+            color: blue !important;
+        }
+
+        [data-ejemplo*="2"] {
+            background-color: coral !important;
+        }
+
+        input[type*="pass"] {
+            background-color: red;
+        }
+
+        input[type*="pass"]:valid {
+            background-color: green;
+        }
+
+        input[type*="pass"]:focus {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://youtube.com">EJEMPLO DE ESTILO</a>
+    <a href="https://wikipedia.org" id="wiki">WIKIPEDIA</a>
+    <a href="https://google.com">OTRO EJEMPLO</a>
+
+    <p class="paragraph clase2 clase3">Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <p class="porejemplo aegaergaerxwegewrgrge4">Párrafo 3</p>
+
+    <div id="ejemplo" class="clase_x">
+        <p id="cafe">Ejemplo café</p>
+        <p id="verde">Ejemplo verde</p>
+    </div>
+
+    <input type="text" name="" id="" data-ejemplo="p$$o valor2 valor3">
+
+    <input type="password" required>
+</body>
+</html>

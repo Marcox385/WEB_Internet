@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3 - iframe</title>
+</head>
+<body>
+    <h1>Ejercicio de iframe</h1>
+    <p>Asigna el atributo name a un iframe y utiliza enlaces con el atributo target que hagan referencia al mismo iframe.</p>
+    <p>En una tabla poner 3 enlaces que cargan el mismo iframe:</p>
+    <ul>
+        <li>Un video</li>
+        <li>Archivo pdf</li>
+        <li>Página de UNE</li>
+    </ul>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>
+                <a href="https://www.youtube.com/embed/fH7_c_TR-rU" target="frame">Video</a>
+            </td>
+            <td rowspan="3">
+                <iframe width="560" height="315" src="" frameborder="0" name="frame"></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="horarios.pdf" target="frame">Archivo pdf</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.universidad-une.com/" target="frame">Página</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

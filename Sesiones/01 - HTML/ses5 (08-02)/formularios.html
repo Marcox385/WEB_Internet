@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 5 - Formularios</title>
+</head>
+
+<body>
+    <!-- Ejemplo 1 - Estructura básica -->
+    <h1>Ejemplo 1</h1>
+    <form action="">
+        <!--
+            Al dar click en una etiqueta label, se activa el control
+            definido en el atributo for, el cual debe coincidir con el
+            identificador de algún campo del formulario
+         -->
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" name="name"> <br>
+        comentario: <br>
+        <textarea name="message" rows="2" cols="30">
+        Textos más largos con scroll
+        </textarea> <br>
+        <input type="submit" value="Guardar">
+    </form>
+
+    <br> <br>
+
+    <!-- Ejemplo 2 - Tipos de input -->
+    <h1>Ejemplo 2</h1>
+    <form action="">
+        text:
+        <input type="text" name="username" id="name"> <br>
+        password:
+        <input type="password" name="password" id="psw"> <br>
+        number:
+        <input type="number" name="cantidad" min="1" max="13"><br>
+        email:
+        <input type="email" name="email" id="mail"> <br>
+        file:
+        <input type="file" name="myFile" id="file"> <br>
+        image: <!-- convierte la imagen en botón de submit -->
+        <input type="image" src="../../Referencias/Recursos gráficos/logo.png" alt="Submit"><br>
+        color:
+        <input type="color" name="miColor" value="#0000ff" > <br>
+        date:
+        <input type="date" name="fecha" value="2019-01-21"> <br>
+        month:
+        <input type="month" name="mes"> <br>
+        time:
+        <input type="time" name="hora"> <br>
+    </form>
+
+    <br> <br>
+
+    <!-- Ejemplo 3 - Tipos de input 2 -->
+    <h1>Ejemplo 3</h1>
+    <form action="">
+        search:
+        <input type="search" name="q"><br>
+        <input type="checkbox" name="chbx1" value="chk1">
+        checkbox 1
+        <input type="checkbox" name="chbx2" value="chk2">
+        checkbox 2
+        <input type="checkbox" name="chbx3d" value="chk3" checked>
+        checkbox 3 <br>
+        <input type="radio" name="test" value="t1">
+        radio 1 <br>
+        <input type="radio" name="test" value="t2" checked>
+        radio 2 <br>
+        range:
+        <input type="range" name="points" min="0" max="10"> <br>
+        button:
+        <input type="button" value="Texto del botón" onclick="alert('Click en botón');"> <br>
+        submit
+        <input type="submit" value="submit button"> <br>
+    </form>
+
+    <br> <br>
+
+    <!-- Ejemplo 4 - select, datalist -->
+    <h1>Ejemplo 4</h1>
+    <form action="">
+        select:
+        <select name="select">
+        <option value="opc1">Opción 1</option>
+        <option value="opc2" selected>Opción 2</option>
+        <option value="opc3">Opción 3</option>
+        <option value="opc4">Opción 4</option>
+        </select> <br><br>
+
+        datalist:
+        <input list="lista" name="testLista">
+        <datalist id="lista">
+            <option value="opción 2">
+            <option value="opción 3">
+            <option value="opción 4">
+            <option value="opción 3">
+        </datalist>
+    </form>
+
+    <br> <br>
+
+    <!-- Ejemplo 5 - Correos -->
+    <h1>Ejemplo 5</h1>
+    <form enctype="text/plain"
+    method="post"
+    action="mailto:mrch@une.com?cc=macf@chp.gob,
+    otro@mail.com&bcc=oculto@site.net&subject=Correo%20bien%20Importante">
+        <label for="nombre_correo">Nombre: </label>
+        <input type="text" name="nombre_correo" id="nombre_correo">
+        <!-- Todos los input deben de tener un nombre para que se vean correctamente -->
+        <input type="submit" value="Enviar &#9993;">
+    </form>
+
+    <br> <br>
+
+    <!-- Ejemplo 6 - Propiedades adicionales -->
+    <h1>Ejemplo 6</h1>
+    <form action="">
+        <input type="text" id="numero" required width="100"
+        pattern="[0-9]+" placeholder="Introduce al menos un número de tu preferencia">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
