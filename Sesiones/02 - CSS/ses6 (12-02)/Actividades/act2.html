@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 6 - Actividad 2</title>
+    <style>
+        th {
+            color: blue;
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+
+        td {
+            color: white;
+        }
+
+        tbody tr:nth-child(2n-1) {
+            background-color: skyblue;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #03c6fc;
+        }
+
+        th:hover, td:hover {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: underline wavy 2px;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        input[type="number"] {
+            color: red;
+            background-color: lightyellow;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <table width="30%">
+        <thead>
+            <tr>
+                <th width="50%">Descripción</th>
+                <th width="50%">Gasto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Libros</td>
+                <td>400.0</td>
+            </tr>
+            <tr>
+                <td>Medicinas</td>
+                <td>520.0</td>
+            </tr>
+            <tr>
+                <td>Alimentos</td>
+                <td>320.0</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>1240.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Links</h1>
+    <a href="mailto:marco.cordero@une.com">Enlace a email</a> <br>
+    <a href="#edad">Ya di click hacía edad</a>
+
+    <h1>Inputs</h1>
+    <label for="correo">Escribe tu correo:</label>
+    <input type="text" name="correo" id="correo"> <br>
+    <label for="edad">Escribe tu edad:</label>
+    <input type="number" name="edad" id="edad">
+</body>
+</html>

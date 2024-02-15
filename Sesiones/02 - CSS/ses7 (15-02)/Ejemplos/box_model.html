@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 7 - Modelo de caja</title>
+
+    <style>
+        /* div {
+            width: 200px;
+            height: 50px;
+            border: 2px solid navy;
+            padding: 10px;
+            margin: 10px;
+        } */
+
+        .normal-size {
+            background-color: red;
+            border: 2px solid black;
+            width: calc(100% / 3);
+            height: 50px;
+            float: left;
+        }
+
+        .box-size {
+            background-color: blue;
+            border: 2px solid black;
+            width: calc(100% / 3);
+            height: 50px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        p:last-of-type {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Contenido de la caja</p>
+    </div>
+
+    <div>
+        <div class="normal-size"><p>1</p></div>
+        <div class="normal-size"><p>2</p></div>
+        <div class="normal-size"><p>3</p></div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div>
+        <div class="box-size"><p>1</p></div>
+        <div class="box-size"><p>2</p></div>
+        <div class="box-size"><p>3</p></div>
+    </div>
+    
+    <br><br><br>
+
+    <p>
+        No sé qué estoy haciendo :(
+    </p>
+</body>
+</html>

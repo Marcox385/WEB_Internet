@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 7 - Float y Clear</title>
+
+    <style>
+        div img {
+            float: left;
+            width: 12%;
+            margin: 0 20px 8px 0;
+            padding: 0 15px 0 0;
+            border-width: 0 4px 4px 0;
+            border-style: dashed;
+            border-color: gainsboro;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        [data-fix] {
+            margin-top: 80px;
+            clear: both;
+        }
+
+        div table {
+            float: right;
+            margin: 0 0 10px 15px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            color: black;
+        }
+
+        table tr,
+        tr td,
+        tr th {
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        #ej3 {
+            margin-left: 35px;
+        }
+
+        #no-float div,
+        .float div,
+        .float-r div {
+            text-align: center;
+            font-size: x-large;
+            width: calc(100% / 4 - 35px);
+            border: 1.5px solid black;
+        }
+
+        #no-float div {
+            background-color: dodgerblue;
+        }
+
+        .float div {
+            background-color: crimson;
+            float: left;
+        }
+
+        .float-r div {
+            background-color: crimson;
+            float: right;
+        }
+
+        .float+p.cleared {
+            clear: left;
+        }
+
+        section > nav, section > article {
+            float: left;
+        }
+
+        section > nav {
+            width: calc(100% / 8);
+        }
+
+        section > article {
+            width: calc(3 * (100% / 4));
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad <i>float</i></h1>
+    <p>Esta propiedad permite tomar un elemento y posicionarlo lo más lejos posible dentro de su contenedor ya sea a la
+        izquierda (left) o a la derecha (right). Todo lo demás elementos <i>flotará</i> a su alrededor.</p>
+    <p><b>Nota:</b> Cuando se use esta propiedad, se recomienda el uso de la propiedad <i>width</i> para indicar el
+        ancho del elemento a flotar, en otro caso, los resultados pueden ser inconsistentes con lo esperado</p>
+    <br>
+    <h2>Ejemplo 1 - float:left</h2>
+    <div>
+        <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="LOGO DE GOOGLE">
+        <p><b>El texto alrededor de esta imagen estará flotado, permitiendo combinar el contenido de algún párrafo en
+                conjunto de un recurso gráfico.</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga totam vitae itaque! Explicabo provident
+            incidunt, beatae quidem nihil eos dignissimos, expedita, officiis molestias maxime error deleniti
+            perspiciatis repudiandae ipsa saepe in sit? Obcaecati repellat amet explicabo facilis neque sed sint a ut
+            adipisci et, quam consequatur iure voluptatem delectus eos eaque est corrupti nisi. Sunt sed reiciendis
+            suscipit quae ea commodi quod deserunt non delectus aut fugiat cupiditate quas, deleniti animi molestiae
+            accusantium laudantium ab facilis praesentium distinctio eius! Ea nam quae ut similique eaque. Repellendus,
+            sed facilis? Fuga, animi harum? Enim, odit? Corporis minima temporibus neque odio illum ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus illum quis itaque reiciendis incidunt,
+            quisquam sunt dolore magnam culpa, repellendus ipsa ea repudiandae harum voluptatibus! Explicabo error
+            aperiam eligendi, ratione eius sint repellat, incidunt voluptatem id expedita dignissimos numquam assumenda
+            optio voluptas. Dolore magnam tempora doloremque aut placeat soluta voluptatum nobis rem cupiditate, ab
+            tenetur. Quidem adipisci fugit quasi similique blanditiis iusto laudantium ad maxime molestiae excepturi
+            reprehenderit maiores quis in soluta, quibusdam itaque. Perspiciatis autem itaque ea nobis est, vitae harum
+            sed, ullam ipsa sint ab voluptatibus eveniet quos quae? Eveniet asperiores porro cum, suscipit laudantium
+            eum impedit!</p>
+    </div>
+    <br>
+    <h2>Ejemplo 2 - float: right</h2>
+    <div>
+        <table>
+            <tr>
+                <th>Propiedad</th>
+                <th>Cantidad de muestras</th>
+            </tr>
+            <tr>
+                <td>Velocidad</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>Aceleración</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Presión</td>
+                <td>9912</td>
+            </tr>
+        </table>
+        <p><b>En este caso, se está tomando la tabla de la derecha y se le indica que flotará hasta el lado derecho,
+                permitiendo así flotar contenidos al lado opuesto.</b></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, hic? Dolores blanditiis voluptatum repudiandae
+            obcaecati saepe incidunt. Amet saepe at doloremque aut excepturi earum! Magnam, eaque maxime iusto maiores
+            saepe eius laudantium totam. Voluptatibus, adipisci? Distinctio neque harum modi ab optio ea iure
+            consequuntur aperiam dolores eum molestias asperiores voluptates, quam est laboriosam in suscipit qui
+            nesciunt animi debitis. Officiis, illo? Sit eaque sunt delectus, maxime dicta eos, cum voluptatem nisi velit
+            atque quae iste reprehenderit id culpa doloribus iusto cupiditate voluptate? Suscipit, quo totam doloribus
+            odit ullam, nesciunt esse velit est, hic iure commodi similique. Optio suscipit necessitatibus, inventore
+            maiores ex obcaecati vero architecto aperiam, iste praesentium officiis voluptate molestias quo explicabo
+            dolor quaerat soluta ea quibusdam. Culpa nisi doloribus nobis aut incidunt quam iste quo, suscipit
+            repudiandae quos, sed placeat vitae ipsam et tempore facere a totam ratione aliquid possimus eveniet,
+            voluptatum repellat distinctio! In quae repellat fugit consectetur omnis nam iure perferendis quaerat nulla
+            voluptatum, voluptas qui dolor distinctio dolorem culpa. Error vel ipsum ratione inventore quidem qui
+            repudiandae magnam animi. Harum, animi! Ex ad voluptatem necessitatibus similique, ipsa a. Nihil doloribus
+            consequatur repellat voluptas commodi vitae, a obcaecati tempora ipsa itaque saepe hic aspernatur pariatur
+            quia.</p>
+    </div>
+    <br>
+    <h2>Ejemplo 3 - Elementos lado a lado</h2>
+    <p>Múltiples elementos pueden tomar la propiedad <i>float</i> con alguno de los dos valores vistos para
+        posicionarlos lado a lado.</p>
+    <div id="ej3">
+        <h3>div's sin float</h3>
+        <div id="no-float">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+        <br>
+        <h3>div's flotados a la izquierda</h3>
+        <div class="float">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+    </div>
+    <p data-fix>La estructura es exactamente la misma para ambos conjuntos de elementos, sin embargo, el primero no está
+        flotado.
+    </p>
+    <br><br>
+    <h1>Propiedad <i>clear</i></h1>
+    <p>Supongamos el siguiente caso, haciendo uso de los mismos elementos de la propiedad pasada. </p>
+    <div style="border: 2px dotted black; padding: 20px;">
+        <div class="float">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maiores quidem ab animi distinctio eos!
+            Assumenda
+            dicta similique velit molestiae! Reprehenderit consequuntur consequatur voluptatum reiciendis, possimus odit
+            sequi provident animi. Recusandae sapiente dolore soluta suscipit!</p>
+    </div>
+    <p>Hay ocasiones en que no se desea que ciertos elementos estén flotados en conjunto de otros, o, en otras palabras,
+        que ningún elemento toque algún lado de otro. Para este propósito se utiliza la propiedad <i>clear</i>.</p>
+    <div style="border: 2px dotted black; padding: 20px;">
+        <div class="float">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+        <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maiores quidem ab animi
+            distinctio eos!
+            Assumenda
+            dicta similique velit molestiae! Reprehenderit consequuntur consequatur voluptatum reiciendis, possimus odit
+            sequi provident animi. Recusandae sapiente dolore soluta suscipit!</p>
+        <b>En este ejemplo se usa <i>clear: left</i> para evitar que el lado izquierdo del párrafo toque a otro
+            elemento (también existe <i>clear: right</i>)</b>
+    </div>
+    <p>Otro posible valor sería <i>both</i>, el cual limpia tanto derecha como izquierda.</p>
+
+    <br>
+    <hr>
+    <h1>Caso de estudio - Layout de navegación</h1>
+    <p>A continuación se presenta un posible diseño de navegación de contenido.</p>
+    <section>
+        <nav>
+            <h4>Contenidos</h4>
+            <ul>
+                <li>
+                    <a href="#_1">Contenido 1</a>
+                </li>
+                <li>
+                    <a href="#_2">Contenido 2</a>
+                </li>
+                <li>
+                    <a href="#_3">Contenido 3</a>
+                </li>
+                <li>
+                    <a href="#_4">Contenido 4</a>
+                </li>
+                <li>
+                    <a href="#_5">Contenido 5</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+                <h1 id="_1">Contenido 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem officiis voluptatibus
+                    necessitatibus dignissimos tenetur qui illum quia veniam incidunt ab tempora ea assumenda corrupti
+                    nihil quasi quod nisi, quas et alias cupiditate numquam magni! A necessitatibus odio perferendis cum
+                    minus neque sed asperiores est reiciendis maiores aspernatur repudiandae et omnis porro qui dolores
+                    optio quo odit enim non, quaerat provident laudantium. Quos alias autem doloremque possimus
+                    explicabo, obcaecati laborum distinctio est magni, voluptate quidem unde nihil nobis expedita ea!
+                    Perferendis, placeat? Ratione esse consequatur quisquam architecto minus aut officia tenetur ad.
+                    Ullam qui, natus eius dignissimos impedit assumenda quas?</p>
+            </section>
+            <section>
+                <h1 id="_2">Contenido 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem officiis voluptatibus
+                    necessitatibus dignissimos tenetur qui illum quia veniam incidunt ab tempora ea assumenda corrupti
+                    nihil quasi quod nisi, quas et alias cupiditate numquam magni! A necessitatibus odio perferendis cum
+                    minus neque sed asperiores est reiciendis maiores aspernatur repudiandae et omnis porro qui dolores
+                    optio quo odit enim non, quaerat provident laudantium. Quos alias autem doloremque possimus
+                    explicabo, obcaecati laborum distinctio est magni, voluptate quidem unde nihil nobis expedita ea!
+                    Perferendis, placeat? Ratione esse consequatur quisquam architecto minus aut officia tenetur ad.
+                    Ullam qui, natus eius dignissimos impedit assumenda quas?</p>
+            </section>
+            <section>
+                <h1 id="_3">Contenido 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem officiis voluptatibus
+                    necessitatibus dignissimos tenetur qui illum quia veniam incidunt ab tempora ea assumenda corrupti
+                    nihil quasi quod nisi, quas et alias cupiditate numquam magni! A necessitatibus odio perferendis cum
+                    minus neque sed asperiores est reiciendis maiores aspernatur repudiandae et omnis porro qui dolores
+                    optio quo odit enim non, quaerat provident laudantium. Quos alias autem doloremque possimus
+                    explicabo, obcaecati laborum distinctio est magni, voluptate quidem unde nihil nobis expedita ea!
+                    Perferendis, placeat? Ratione esse consequatur quisquam architecto minus aut officia tenetur ad.
+                    Ullam qui, natus eius dignissimos impedit assumenda quas?</p>
+            </section>
+            <section>
+                <h1 id="_4">Contenido 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem officiis voluptatibus
+                    necessitatibus dignissimos tenetur qui illum quia veniam incidunt ab tempora ea assumenda corrupti
+                    nihil quasi quod nisi, quas et alias cupiditate numquam magni! A necessitatibus odio perferendis cum
+                    minus neque sed asperiores est reiciendis maiores aspernatur repudiandae et omnis porro qui dolores
+                    optio quo odit enim non, quaerat provident laudantium. Quos alias autem doloremque possimus
+                    explicabo, obcaecati laborum distinctio est magni, voluptate quidem unde nihil nobis expedita ea!
+                    Perferendis, placeat? Ratione esse consequatur quisquam architecto minus aut officia tenetur ad.
+                    Ullam qui, natus eius dignissimos impedit assumenda quas?</p>
+            </section>
+            <section>
+                <h1 id="_5">Contenido 5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem officiis voluptatibus
+                    necessitatibus dignissimos tenetur qui illum quia veniam incidunt ab tempora ea assumenda corrupti
+                    nihil quasi quod nisi, quas et alias cupiditate numquam magni! A necessitatibus odio perferendis cum
+                    minus neque sed asperiores est reiciendis maiores aspernatur repudiandae et omnis porro qui dolores
+                    optio quo odit enim non, quaerat provident laudantium. Quos alias autem doloremque possimus
+                    explicabo, obcaecati laborum distinctio est magni, voluptate quidem unde nihil nobis expedita ea!
+                    Perferendis, placeat? Ratione esse consequatur quisquam architecto minus aut officia tenetur ad.
+                    Ullam qui, natus eius dignissimos impedit assumenda quas?</p>
+            </section>
+        </article>
+    </section>
+</body>
+
+</html>

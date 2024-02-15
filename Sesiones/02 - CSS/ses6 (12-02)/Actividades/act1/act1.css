@@ -1,0 +1,48 @@
+/* Novedad */
+[data-desc~="no-no"] {
+    font-weight: normal;
+}
+
+[data-desc~="no-si"] {
+    font-weight: bold;
+}
+
+/* Uso */
+[data-desc*="poco"] {
+    font-size: large;
+}
+
+[data-desc*="normal"] {
+    font-size: larger;
+}
+
+[data-desc*="mucho"] {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+/* Recomendación */
+[data-desc*="re-no"] {
+    background-color: rgba(255, 0, 0, 50%);
+}
+
+[data-desc*="re-si"] {
+    background-color: lightgreen;
+}
+
+/* Énfasis */
+[data-desc$="+"] {
+    text-shadow: 0 0 5px black;
+}
+
+[data-desc$="-"] {
+    text-decoration: underline wavy white 1px;
+}
+
+.tag {
+    text-align: center;
+}
+
+.tag:first-of-type, .tag:last-of-type {
+    color: white;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 7 - Position - Absolute</title>
+
+    <style>
+        img {
+            width: 180px;
+            position: absolute;
+            top: 0;
+            right: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>position: absolute</h1>
+    <p>Este valor permite posicionar el contenido de algún elemento de forma absoluta en relación a su contenedor padre
+        (&lt;body&gt; si no hay ancestro),
+        es decir, interrumpe el flujo normal de los elementos para otorgar una posición determinada fuera de
+        todo contexto previo.</p>
+    <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="LOGO DE GOOGLE">
+    <p>Si revisamos el código fuente de esta página, nos percataremos que la imagen que aparece del lado izquierdo está
+        declarada entre este párrafo y el anterior, sin embargo, su posición es una completamente distinta a los
+        esperado.</p>
+    <p>A la imagen se le está dando un ancho de 180px, se le declara una posición absoluta y luego se indica que estará
+        pegada al tope de la página (top: 0) y con un desplazamiento a la derecha (lado derecho del navegador) de 25px
+    </p>
+    <b>Intenta cambiar el tamaño de tu navegador para ver el comportamiento del elemento.</b>
+</body>
+
+</html>
