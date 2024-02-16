@@ -85,11 +85,18 @@
         }
 
         section > nav {
+            position: sticky;
+            top: 0;
+            height: 1vh;
             width: calc(100% / 8);
         }
 
         section > article {
             width: calc(3 * (100% / 4));
+        }
+
+        body > section {
+            display: flex;
         }
     </style>
 </head>
