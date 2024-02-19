@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Media Queries</title>
+
+    <style>
+        p::after {
+            content: 'grande';
+        }
+
+        /* Para pantallas que tengan 992 pixeles de ancho o menos */
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: tomato;
+            }
+
+            p::after {
+                content: 'normal';
+            }
+        }
+
+        /* Para pantallas que tengan 600 pixeles de ancho o menos */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightseagreen;
+            }
+
+            p::after {
+                content: 'pequeño';
+            }
+        }
+
+        /* Dispositivos extra pequeños (teléfonos, 600px y menos) */
+        @media only screen and (max-width: 600px) {...}
+        /* Dispositivos pequeños (tablets en modo vertical y teléfonos grandes, 600px y más) */
+        @media only screen and (min-width: 600px) {...}
+        /* Dispositivos medianos (tablets en modo horizontal, 768px y más) */
+        @media only screen and (min-width: 768px) {...}
+        /* Dispositivos grandes (laptops/de escritorio, 992px y más) */
+        @media only screen and (min-width: 992px) {...}
+        /* Dispositivos extra grandes (laptops grandes y de escritorio, 1200px y más) */
+        @media only screen and (min-width: 1200px) {...}
+    </style>
+</head>
+
+<body>
+    <p>Cuerpo </p>
+</body>
+
+</html>

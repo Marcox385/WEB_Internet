@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Alineación horizontal con flexbox</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            border-radius: 5px;
+            background-color: rgb(158, 115, 238);
+        }
+
+        .flex-container > div {
+            border-radius: 5px;
+            color: white;
+            background-color: #f7941f;
+            border: 2.5px solid black;
+            margin: 10px;
+            font-size: x-large;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .f-start {
+            justify-content: flex-start;
+        }
+
+        .f-end {
+            justify-content: flex-end;
+        }
+
+        .f-end {
+            justify-content: center;
+        }
+
+        .f-sb {
+            justify-content: space-between;
+        }
+
+        .f-sa {
+            justify-content: space-around;
+        }
+
+        .f-se {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: alineación horizontal (justify-content)</h1>
+    <hr>
+    <h2>flex-start</h2>
+    <div class="flex-container f-start">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h2>flex-end</h2>
+    <div class="flex-container f-end">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h2>center</h2>
+    <div class="flex-container f-center">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h2>space-between</h2>
+    <div class="flex-container f-sb">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h2>space-around</h2>
+    <div class="flex-container f-sa">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h2>space-evenly</h2>
+    <div class="flex-container f-se">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+</body>
+</html>

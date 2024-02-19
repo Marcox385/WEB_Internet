@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Alineación vertical con flexbox</title>
+
+    <style>
+        .flex-container-ai, .flex-container-ac {
+            display: flex;
+            border-radius: 5px;
+            background-color: rgb(158, 115, 238);
+            text-align: center;
+        }
+
+        .flex-container-ai {
+            height: 200px;
+            justify-content: center;
+        }
+
+        .flex-container-ac {
+            height: 350px;
+            flex-wrap: wrap;
+        }
+
+        .flex-container-ai > div, .flex-container-ac > div {
+            border-radius: 5px;
+            color: white;
+            background-color: #f7941f;
+            border: 2.5px solid black;
+            margin: 10px;
+            font-size: x-large;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container-ac > div {
+            width: 100px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .stretch > div {
+            align-items: center;
+        }
+
+        .f-start {
+            align-items: flex-start;
+        }
+
+        .f-end {
+            align-items: flex-end;
+        }
+        
+        .ai-center {
+            align-items: center;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .f-start-ac {
+            align-content: flex-start;
+        }
+
+        .f-end-ac {
+            align-content: flex-end;
+        }
+
+        .ac-center {
+            align-content: center;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .stretch-ac {
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: alineación vertical (align-items y align-content)</h1>
+    <hr>
+    <h2>align-items</h2>
+    <h3>stretch</h3>
+    <div class="flex-container-ai stretch">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>flex-start</h3>
+    <div class="flex-container-ai f-start">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>flex-end</h3>
+    <div class="flex-container-ai f-end">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>center</h3>
+    <div class="flex-container-ai ai-center">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>baseline</h3>
+    <div class="flex-container-ai baseline">
+        <div style="font-size: small;">A</div>
+        <div style="font-size: xx-large;">B</div>
+        <div style="font-size: large;">C</div>
+    </div>
+    <br>
+    <hr>
+    <h2>align-content</h2>
+    <h3>flex-start</h3>
+    <div class="flex-container-ac f-start-ac">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+    <br>
+    <h3>flex-end</h3>
+    <div class="flex-container-ac f-end-ac">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+    <br>
+    <h3>center</h3>
+    <div class="flex-container-ac ac-center">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+    <br>
+    <h3>space-between</h3>
+    <div class="flex-container-ac space-between">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+    <br>
+    <h3>space-around</h3>
+    <div class="flex-container-ac space-around">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+    <br>
+    <h3>stretch</h3>
+    <div class="flex-container-ac stretch-ac">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+</body>
+</html>

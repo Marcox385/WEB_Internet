@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Flexbox direction</title>
+    <style>
+        .flex-div {
+            display: flex;
+        }
+
+        div {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        div>div {
+            flex-grow: 1;
+        }
+
+        .dir-row {
+            flex-direction: row;
+        }
+
+        .dir-row-rev {
+            flex-direction: row-reverse;
+        }
+
+        .dir-col {
+            flex-direction: column;
+        }
+
+        .dir-col-rev {
+            flex-direction: column-reverse;
+        }
+
+        .no-wrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .dir-wrap {
+            flex-flow: column wrap-reverse;
+        }
+
+        /* Equivalente a */
+        .dir-y-wrap {
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+        }
+
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 1px solid silver;
+            -ms-box-orient: horizontal;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap li {
+            background: gold;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .wrap-reverse li {
+            background: deepskyblue;
+        }
+
+        .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox: flex-direction y flex-wrap</h1>
+    <hr>
+    <h2>flex-direction</h2>
+    <h3>row</h3>
+    <div class="flex-div dir-row">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>row-reverse</h3>
+    <div class="flex-div dir-row-rev">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>column</h3>
+    <div class="flex-div dir-col">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <h3>column-reverse</h3>
+    <div class="flex-div dir-col-rev">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <br>
+    <hr>
+    <h2>flex-wrap</h2>
+    <h3>no-wrap</h3>
+    <ul class="flex-container nowrap">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+        <li class="flex-item">7</li>
+        <li class="flex-item">8</li>
+    </ul>
+    <br>
+    <h3>wrap</h3>
+    <ul class="flex-container wrap">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+        <li class="flex-item">7</li>
+        <li class="flex-item">8</li>
+    </ul>
+    <br>
+    <h3>wrap-reverse</h3>
+    <ul class="flex-container wrap-reverse">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+        <li class="flex-item">7</li>
+        <li class="flex-item">8</li>
+    </ul>
+
+
+</body>
+
+</html>

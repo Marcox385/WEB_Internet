@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Orden y tamaño de elementos con flexbox</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            border-radius: 5px;
+            background-color: rgb(158, 115, 238);
+            text-align: center;
+        }
+
+        .flex-container > div {
+            border-radius: 5px;
+            color: white;
+            background-color: #f7941f;
+            border: 2.5px solid black;
+            margin: 10px;
+            font-size: x-large;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .column-b {
+            flex-direction: column-reverse;
+        }
+
+        ._1 {
+            order: 99;
+        }
+
+        ._1s {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20em;
+        }
+
+        ._2 {
+            flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 20em;
+        }
+
+        ._3 {
+            flex-grow: 3;
+        }
+
+        ._4 {
+            order: -4;
+        }
+
+        ._5 {
+            flex-grow: 5;
+        }
+
+        ._6 {
+            order: -2
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: orden y tamaño (order, flex-grow, flex-shrink, flex-basis)</h1>
+    <hr>
+    <h2>Orden de elementos</h2>
+    <div class="flex-container">
+        <div class="_1">1 [99]</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="_4">4 [-4]</div>
+        <div>5</div>
+        <div class="_6">6 [-2]</div>
+    </div>
+    <br>
+    <div class="flex-container column-b">
+        <div class="_1">1 [99]</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="_4">4 [-4]</div>
+        <div>5</div>
+        <div class="_6">6 [-2]</div>
+    </div>
+    <br>
+    <hr>
+    <h2>Tamaño de elementos</h2>
+    <h3>flex-grow</h3>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="_3">3</div>
+        <div class="_5">5</div>
+        <div>1</div>
+    </div>
+    <br>
+    <h3>flex-shrink, flex-basis</h3>
+    <div class="flex-container">
+        <div class="_1s">1</div>
+        <div class="_2">2</div>
+    </div>
+    <br>
+</body>
+</html>

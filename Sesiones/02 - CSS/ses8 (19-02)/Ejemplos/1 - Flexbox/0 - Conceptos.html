@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 8 - CSS - Responsivo - Flexbox</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        .flexible {
+            display: flex; /* O inline-flex */
+        }
+
+        .flexible>div {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sin flex</h1>
+    <fieldset>
+        <legend>Container</legend>
+        <div>
+            <div style="background-color: red;">A (Item)</div>
+            <div style="background-color: blue;">B (Item)</div>
+            <div style="background-color: yellow;">C (Item)</div>
+        </div>
+    </fieldset>
+    <br>
+    <h1>Con flex</h1>
+    <fieldset>
+        <legend>Container</legend>
+    <div class="flexible">
+        <div style="background-color: red;">A (Item)</div>
+        <div style="background-color: blue;">B (Item)</div>
+        <div style="background-color: yellow;">C (Item)</div>
+    </div>
+</fieldset>
+</body>
+
+</html>
