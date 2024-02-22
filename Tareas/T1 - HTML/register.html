@@ -1,0 +1,94 @@
+<!-- IS727272 - CORDERO HERNÁNDEZ MARCO RICARDO -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate aquí</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <h1>REGISTRO</h1>
+            </td>
+        </tr>
+        <tr>
+            <td id="nav" width="10%" valign="top">
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <p>
+                                <a href="main.html">Inicio</a><br>
+                                <a href="register.html"><b>Registro</b></a><br>
+                                <a href="about.html">Acerca del curso</a><br>
+                            </p>
+                        </td>
+                        <td>
+                            <p>💒<br>
+                                📝<br>
+                                🔍</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td valing="top">
+                <hr width="35%" align="left">
+                <form enctype="text/plain" method="POST" action="mailto:correo@sitio.com?cc=otro@test.com;otromas@sitio.com&bcc=oculto@sitio.com&Subject=Noticia%20Importante">
+                    <table border="1" cellspacing="0" cellpadding="0">
+                        <thead>¿Te interesa inscribirte en nuestro curso?</thead>
+                        <tr>
+                            <td>
+                                <label for="Nombre" focus>Nombre:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="nombre" id="Nombre" placeholder="Escribe tu nombre" required autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="Email" placeholder="Escribe tu correo" required autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Nivel">Nivel de<br>estudios:</label>
+                            </td>
+                            <td>
+                                <select name="nivel" id="Nivel">
+                                    <option value="Profesor">Profesor</option>
+                                    <option value="Doctorado">Estudiante de doctorado</option>
+                                    <option value="Maestría">Estudiante de maestría</option>
+                                    <option value="Licenciatura">Estudiante de licenciatura</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Comentario">Comentario:</label>
+                            </td>
+                            <td>
+                                <textarea name="comentario" id="Comentario" cols="30" rows="10"
+                                    placeholder="Escribe aquí tu comentario sin acentos"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Enviar solicitud</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
