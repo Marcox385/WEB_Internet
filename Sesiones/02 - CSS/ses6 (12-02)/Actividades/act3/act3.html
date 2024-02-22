@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sesión 6 - Actividad 3</title>
+
+    <style>
+        td {
+            text-align: center;
+        }
+
+        #warning {
+            background-color: orangered;
+            color: white;
+        }
+
+        /* Primera tabla */
+        .pos {
+            background-color: lightgreen;
+        }
+
+        table[height="200px"] tr:first-child td:nth-child(-3n+8) {
+            background-color: lightblue;
+            font-size: xx-large;
+        }
+
+        table[height="200px"] tr:nth-last-child(2) td:nth-last-child(-n+3),
+        table[height="200px"] tr:last-child td:nth-child(-n+3) {
+            background-color: lightseagreen;
+        }
+
+        [data-val="pos"] {
+            background-color: lightpink;
+        }
+
+        [data-val="pos"] {
+            font-size: xx-large;
+        }
+
+        /* Segunda tabla */
+        [colspan="2"] {
+            background-color: lightcoral;
+        }
+
+        [colspan="2"] + td, [colspan="3"] + td {
+            background-color: lightskyblue;
+            font-size: xx-large;
+        }
+
+        [rowspan="3"] {
+            font-size: xx-large;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cuántos valores puedes atrapar</h1>
+
+    <p>Reglas: </p>
+
+    <ul>
+        <li>Debes hacer que se vea similar a la imagen de solución</li>
+        <li>Cada color representa una regla de CSS </li>
+        <li> <span id="warning"> No añadir atributos o cambiar contenido al HTML </span> </li>
+    </ul>
+
+    <h2>Primera tabla</h2>
+
+    <table border="1" width="600px" height="200px">
+        <tr>
+            <td>-1</td>
+            <td>2</td>
+            <td data-val="neg">-1</td>
+            <td>-1</td>
+            <td>3</td>
+            <td>-1</td>
+            <td class="pos">1</td>
+            <td>4</td>
+            <td data-val="neg">-1</td>
+            <td>-1</td>
+        </tr>
+        <tr class="pos">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td class="pos">1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td data-val="neg">-1</td>
+            <td class="pos">1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-1</td>
+            <td data-val="pos">5</td>
+            <td>-1</td>
+            <td class="pos">1</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td data-val="pos">1</td>
+        </tr>
+
+    </table>
+
+    <h2>Segunda tabla</h2>
+    <table border="1" width="600px">
+        <tr>
+            <td>-1</td>
+            <td>-1</td>
+            <td colspan="3">-1</td>
+            <td>3</td>
+            <td>-1</td>
+            <td rowspan="3">5</td>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td colspan="2">1</td>
+
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>-1</td>
+            <td>-1</td>
+            <td>-1</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>
