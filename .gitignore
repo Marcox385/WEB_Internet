@@ -1,6 +1,8 @@
 # Archivos específicos
+*.docx
 *.mp4
 
 # Directorios específicos
-Referencias/
 node_modules/
+Parciales/
+Referencias/
