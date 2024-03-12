@@ -18,7 +18,7 @@ console.log(array.includes(4, 0)); // false
 console.log(array.includes(3, 0)); // true
 
 /* Métodos avanzados */
-let users = [
+let users1 = [
     {id: 1, nombre: 'Jesús'}, {id: 2, nombre: 'María'},
     {id: 3, nombre: 'Jaime'}
 ];
@@ -26,7 +26,7 @@ let users = [
 // Find
 // Sintaxis -> arr.find(function)
 let mUser = users.find(item => item.nombre.startsWith('M'));
-console.log(jFilter); // ?
+console.log(mUser); // ?
 console.log(users.find(user => user.id == 4)); // ?
 
 // Find Index
