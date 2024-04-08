@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script src="ej2 - ajax.js" defer></script>
+</head>
+
+<body>
+    <h1>Usuarios</h1>
+    <div id="usersContainer"></div>
+    <button onclick="getUsers()">Obtener usuarios</button>
+    
+    <hr>
+    
+    <h1>Usuario por id</h1>
+    <label for="userID">Ingresa el ID</label>
+    <input type="text" placeholder="ID" name="userID" id="userID">
+    <button onclick="getUser()">Obtener usuario</button>
+    <p id="userRes"></p>
+</body>
+
+</html>
