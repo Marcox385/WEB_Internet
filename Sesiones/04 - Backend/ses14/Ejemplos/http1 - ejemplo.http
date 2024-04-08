@@ -1,0 +1,5 @@
+### Llamada a Google
+GET https://www.google.com.mx
+
+### Petición al servidor local
+GET http://localhost:3000
