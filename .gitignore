@@ -1,4 +1,5 @@
 # Archivos específicos
+*.env
 *.docx
 *.mp4
 
