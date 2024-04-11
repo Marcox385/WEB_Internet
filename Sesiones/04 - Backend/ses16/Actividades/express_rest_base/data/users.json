@@ -1,0 +1,28 @@
+[{
+    "_uid": "2354947071",
+    "_nombre": "Juan",
+    "_apellidos": "Perez",
+    "_email": "juan.perez@xm.mx",
+    "_password": "ImpossibleToHack",
+    "_fecha": "1980-10-10",
+    "_sexo": "H",
+    "_imagen": "https://randomuser.me/api/portraits/men/71.jpg"
+}, {
+    "_uid": "4512832687",
+    "_nombre": "Diego",
+    "_apellidos": "Lopez",
+    "_email": "diego.lopez@xm.mx",
+    "_password": "BestPassword",
+    "_fecha": "1993-02-06",
+    "_sexo": "H",
+    "_imagen": "https://randomuser.me/api/portraits/men/87.jpg"
+}, {
+    "_uid": "6192551742",
+    "_nombre": "Diana",
+    "_apellidos": "Gomez",
+    "_email": "diana.gomez@xm.mx",
+    "_password": "pass1234",
+    "_fecha": "1991-12-08",
+    "_sexo": "M",
+    "_imagen": "https://randomuser.me/api/portraits/women/42.jpg"
+}]

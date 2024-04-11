@@ -1,7 +1,6 @@
-"use strict";
-
-const fs = require('fs')
-const User = require('./users')
+/* Manejo de datos de la API */
+const fs = require('fs');
+const User = require('./users');
 
 // Leer el contenido de users.json
 // Parsear y convertir a User el contenido de users.json
@@ -30,8 +29,7 @@ function isUserValid(nombre, apellidos, email) {
     return true;
 }
 
-exports.getUsers = getUsers;
-exports.getUserByEmail = getUserByEmail;
-exports.createUser = createUser;
-exports.updateUser = updateUser;
-exports.deleteUser = deleteUser;
+module.exports = {
+    getUsers, getUserByEmail, createUser,
+    updateUser, deleteUser
+}

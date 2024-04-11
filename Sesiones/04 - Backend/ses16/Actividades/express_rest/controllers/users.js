@@ -1,6 +1,5 @@
-"use strict";
+/* Modelo de Usuario */
 
-// Implementa la clase User
 class User {
     constructor(nombre, apellidos, email, password, fecha, sexo, imagen) {
         this.uid = User.generateUid(10);

@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "nombre": "Marco Ricardo",
+    "apellidos": [
+        "Cordero", "Hernández"
+    ],
+    "teléfono": "3111176290"
+}
