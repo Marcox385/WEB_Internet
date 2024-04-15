@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Búsqueda de elementos</title>
+    <style>
+        .pinkText {
+            color: rgb(220, 50, 220);
+        }
+    </style>
+
+    <script src="search1 - basic.js" defer></script>
+</head>
+
+<body>
+    <p id="miParrafo">Elemento con ID definido</p>
+    <p>Otro elemento de párrafo</p>
+    <p class="pinkText">Elemento rosa</p>
+    <p class="pinkText">Otro elemento rosa</p>
+
+    <form action="">
+        <label for="nombreInput">Mi input: </label>
+        <input type="text" name="nombreInput" id="nombreInput">
+    </form>
+
+    <form action="">
+        <label for="nombreInput2">Mi otro input: </label>
+        <input type="text" name="nombreInput" id="nombreInput2">
+    </form>
+
+    <div>
+        <p>Elemento <span class="pinkText">rosa</span> embebido</p>
+    </div>
+
+    <div>
+        <p>Elemento <span class="pinkText">rosa</span> embebido <strong>de nuevo</strong></p>
+    </div>
+</body>
+
+</html>
