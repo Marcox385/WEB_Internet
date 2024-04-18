@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Pt2 - Event Handlers</title>
+</head>
+
+<body>
+    <button onclick="alert('Hola mundo')">Botón 1</button>
+    <button onclick="funcionExterna()">Botón 2</button>
+    <script>
+        function funcionExterna() {
+            alert('Hola mundo');
+        }
+    </script>
+
+    <button id="btn3">Botón 3</button>
+    <script>
+        btn3.onclick = otraFuncion; // Sin paréntesis
+        function otraFuncion() {
+            alert('Hola mundo');
+        }
+    </script>
+
+    <button id="btn4">Botón 4</button>
+    <script>
+        // Callback directo en asignación
+        btn4.onclick = function () {
+            alert('Botón 4 presionado');
+        }
+    </script>
+</body>
+
+</html>
