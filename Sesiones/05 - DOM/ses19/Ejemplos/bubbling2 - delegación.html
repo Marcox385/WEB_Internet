@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Bubbling - Delegación</title>
+</head>
+<body>
+    <table id="tab1" border="1">
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+        <tr>
+            <td>cell3</td>
+            <td>cell4</td>
+        </tr>
+    </table>
+
+    <script>
+        tab1.onclick = function(event) {
+            if (event.target.nodeName != 'TD') return;
+
+            // tr padre más cercano
+            let row = event.target.closest('tr');
+            alert(`Fila número ${row.rowIndex}`);
+        }
+    </script>
+</body>
+</html>

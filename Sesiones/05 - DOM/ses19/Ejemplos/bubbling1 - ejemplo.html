@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Bubbling</title>
+</head>
+<body>
+    <div onclick="alert('hola 3')">
+        <span onclick="alert('hola 2')">
+            <p onclick="alert('hola 1')">
+                Texto
+            </p>
+        </span>
+    </div>
+</body>
+</html>

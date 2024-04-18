@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Listeners</title>
+</head>
+<body>
+    <button id="btn5">Botón 5</button>
+    <script>
+        // Event handler
+        btn5.onclick = () => alert('Hola mundo 1');
+
+        // Event listeners
+        btn5.addEventListener('click', () => alert('Hola mundo 2'));
+        btn5.addEventListener('click', funcionAdicional);
+        // Observa que ya no se usa "on"
+
+        function funcionAdicional() {
+            alert('Hola mundo 3');
+        }
+    </script>
+</body>
+</html>

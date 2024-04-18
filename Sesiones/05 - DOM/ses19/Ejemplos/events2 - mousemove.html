@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos - mousemove</title>
+    <style>
+        #container {
+            height: 500px;
+            background: black;
+            position: relative;
+        }
+
+        #circle {
+            border-radius: 50%;
+            background: lightgreen;
+            height: 75px;
+            width: 75px;
+            position: absolute;
+            transition: transform 0.1s ease-out;
+        }
+
+        #circle:active {
+            background-color: lightpink;
+            transform: scale(1.3) rotateY(180DEG);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="circle"></div>
+    </div>
+    X: <input type="text" name="txtX" id="txtX">
+    Y: <input type="text" name="txtY" id="txtY">
+    <script src="events2 - mousemove.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Eventos - Ejercicio 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <script src="ej2.js" defer></script>
+</head>
+
+<body>
+    <main class="container align-items-center mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Tabla dinámica</h1>
+                <br>
+                <p>Introduce el elemento a agregar aquí</p>
+                <label for="num">Número</label>
+                <input type="number" name="num" id="num" min="0"><br>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="mt-2 mb-3"><br>
+                <button id="agregar" type="button" class="btn btn-primary px-5">Agregar</button>
+                <input type="checkbox" name="lock" id="lock" class="ml-5">
+                <label for="lock">Bloquear numeración</label>
+            </div>
+            <div class="col">
+                <div class="table-responsive">
+                    <table id="mainTable" class="table table-bordered border-dark">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col">Número</th>
+                                <th scope="col">Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
