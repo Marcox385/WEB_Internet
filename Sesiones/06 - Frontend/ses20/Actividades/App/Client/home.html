@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Nota: Este ejemplo fue desarrollado con Bootstrap 4 -->
+
+<head>
+  <title>Home</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <style>
+    .media {
+      border: 1px solid #d5dbdd;
+      padding: 5px 20px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.04);
+      background: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="nav navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#signupModal">Registrarse</a>
+      <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+      <a class="nav-item nav-link" href="user_admin.html">Administración de usuarios</a>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-3">Programación WEB</h1>
+    <p class="lead">Crear una interface web para registro de usuarios</p>
+    <hr class="my-2">
+    <ul>
+      <li>Login</li>
+      <li>Registro</li>
+      <li>Consultas</li>
+    </ul>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="user_admin.html" role="button">Ir a consultas</a>
+    </p>
+  </div>
+
+
+  <!-- Modal de ingreso -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="form-group">
+              <label for="">Correo</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-user    "></i></span>
+                </div>
+                <input type="text" class="col-10 form-control" name="" id="" aria-describedby="helpId"
+                  placeholder="correo registrado">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon2"><i class="fas fa-key    "></i></span>
+                </div>
+                <input type="password" class="col-10 form-control" name="" id="" aria-describedby="helpId"
+                  placeholder="correo registrado">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-12 control">
+                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
+                  No tienes cuenta!
+                  <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">
+                    Registrate aquí
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de registro -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Registrar usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" name="" id="" class="form-control" placeholder="Nombre o nombres"
+                  aria-describedby="helpId" required>
+              </div>
+              <div class="col-6">
+                <input type="text" name="" id="" class="form-control" placeholder="Apellidos" aria-describedby="helpId"
+                  required>
+              </div>
+            </div>
+
+            <input type="mail" name="" id="" class="form-control mt-3" placeholder="Tu correo" aria-describedby="helpId"
+              required>
+
+            <input type="password" name="" id="" class="form-control mt-3" placeholder="Contraseña"
+              aria-describedby="helpId" required>
+
+            <input type="password" name="" id="" class="form-control mt-3" placeholder="Confirmar contraseña"
+              aria-describedby="helpId" required>
+
+            <div class="input-group mt-3">
+              <input type="date" class="form-control" value="2000-01-01" name="" id="" style="border-right: none;">
+              <div class="input-group-append">
+                <span class="input-group-text bg-white" id="basic-addon3"><i class="fa fa-calendar"
+                    aria-hidden="true"></i></span>
+              </div>
+            </div>
+
+            <div class="radioB mt-3 border">
+              <div class="form-check">
+                <label class="form-check-label ml-3" for="Hombre">
+                  <input type="radio" class="form-check-input sexoM" name="sexo" id="Hombre" value="H" checked>
+                  Hombre
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label ml-3" for="Mujer">
+                  <input type="radio" class="form-check-input sexoF" name="sexo" id="Mujer" value="F">
+                  Mujer
+                </label>
+              </div>
+            </div>
+
+            <input type="url" name="" id="" class="form-control mt-3" placeholder="Url de imagen de perfil"
+              aria-describedby="helpId">
+
+            <button type="submit" class="btn btn-success mt-3">Registrarse</button>
+            <button type="button" class="btn btn-secondary mt-3" data-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
