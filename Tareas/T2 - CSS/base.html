@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 2 - Selectores CSS</title>
+
+    <style>
+        hr {
+            display: block;
+            width: 15%;
+            border: 5px double #2980b9;
+            margin-left: 0px;
+        }
+
+        th {
+            text-align: left;
+            background-color: #2980b9;
+            color: white;
+            font-size: 2em;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            background-color: #f6f6f6;
+        }
+
+        tr {
+            height: 2em;
+        }
+
+        tr:nth-last-of-type(even) {
+            background-color: #f6f6f6;
+        }
+
+        tr:nth-last-of-type(odd) {
+            background-color: #e9e9e9;
+        }
+
+        /* --- AÑADE AQUI TUS SELECTORES --- */
+
+        /* Ocultar los filtros (opciónes de búsqueda) */
+
+        /* Cambiar color a gris cuando no sean de interés para los filtros aplicados */
+
+        /* Mostrar / ocultar columnas seleccionadas de la tabla */
+
+        /* Cambiar el tamaño de letra a 1.8em a los labels inmediatamente después de la clase category */
+
+        /* Si es un input de tipo radio o si es de clase columnas aplicar margin-left: 25px */
+
+    </style>
+
+</head>
+
+<body>
+    <h1> Filtros de alumnos </h1>
+
+    <input type="checkbox" id="show" checked>
+    <label for="show"> Mostrar opciones de búsqueda</label>
+    <hr>
+
+    <div id="main">
+        <div id="filters">
+            <!-- Clasificación por sexo clase .career -->
+            <input class="category" type="checkbox" name="career">
+            <label class="career" for="r1"> Carrera </label> <br>
+            <input class="career" type="radio" name="career" id="ic">
+            <label class="career" for="r2"> Ing. en Computación </label> <br>
+            <input class="career" type="radio" name="career" id="ps">
+            <label class="career" for="r3"> Psicología </label> <br>
+            <input class="career" type="radio" name="career" id="dg" checked>
+            <label class="career" for="r3"> Diseño gráfico </label> <br>
+
+            <!-- Clasificación por Calificación clase .grade -->
+
+            <input class="category" type="checkbox" name="grade" id="grade">
+            <label class="grade" for="grade"> Calificación </label> <br>
+            <input class="grade" type="radio" name="grade" id="grade1" checked>
+            <label class="grade" for="grade1"> Aprobados </label> <br>
+            <input class="grade" type="radio" name="grade" id="grade2">
+            <label class="grade" for="grade2"> Reprobados </label> <br>
+
+            <!-- Mostrar/ocultar columnas clase .columns  -->
+
+            <input class="category" type="checkbox" name="col" id="columns">
+            <label class="columns" for="ch1"> Mostrar algunas columnas </label> <br>
+            <input class="columns" type="checkbox" name="col1" checked>
+            <label class="columns" for="col1"> Nombre </label> <br>
+            <input class="columns" type="checkbox" name="col2">
+            <label class="columns" for="col2"> Correo </label> <br>
+            <input class="columns" type="checkbox" name="col3" checked>
+            <label class="columns" for="col3"> Carrera </label> <br>
+            <input class="columns" type="checkbox" name="col4">
+            <label class="columns" for="col4"> Creditos </label> <br>
+            <input class="columns" type="checkbox" name="col5">
+            <label class="columns" for="col5"> Promedio </label> <br>
+
+            <hr>
+
+            <table id="content">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Carrera</th>
+                    <th>Créditos</th>
+                    <th>Promedio</th>
+                </tr>
+
+                <tr data-info="PS R">
+                    <td>Juan Perez</td>
+                    <td>ps123456@escuela.mx</td>
+                    <td>PS</td>
+                    <td>165</td>
+                    <td>5.5</td>
+                </tr>
+
+                <tr data-info="IC R">
+                    <td>Maria Lopez</td>
+                    <td>ic654321@escuela.mx</td>
+                    <td>IC</td>
+                    <td>375</td>
+                    <td>5.8</td>
+                </tr>
+
+                <tr data-info="DG A">
+                    <td>Antonio Hernandez</td>
+                    <td>dg678945@escuela.mx</td>
+                    <td>DG</td>
+                    <td>197</td>
+                    <td>8.9</td>
+                </tr>
+
+                <tr data-info="PS A">
+                    <td>Alejandra Ramos</td>
+                    <td>ps547698@escuela.mx</td>
+                    <td>PS</td>
+                    <td>210</td>
+                    <td>7.7</td>
+                </tr>
+
+                <tr data-info="IC A">
+                    <td>Rodrigo Martinez</td>
+                    <td>ic192837@escuela.mx</td>
+                    <td>IC</td>
+                    <td>310</td>
+                    <td>9.7</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

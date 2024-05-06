@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 // Configurar variables de entorno
 dotenv.config();
 // Buscará el archivo .env a nivel raíz de la aplicación
-// Equivalente -> require('dotenv').require();
+// Equivalente -> require('dotenv').config();
 
 // Acceder a variables de entorno
 const secret = process.env.SECRET;

@@ -3,5 +3,5 @@
 const fs = require('fs');
 
 // Leer archivo (local)
-let data = JSON.parse(fs.readFileSync('./fs1 - uso.json'));
+let data = JSON.parse(fs.readFileSync('./fs1 - lectura.json'));
 console.log(data);

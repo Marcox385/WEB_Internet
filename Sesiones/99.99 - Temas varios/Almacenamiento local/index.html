@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas Varios - Redirección</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            padding: 15px;
+        }
+
+        .varContainer {
+            display: flex;
+        }
+
+        .varContainer .col:last-of-type {
+            margin-left: 20px;
+        }
+
+        #variables {
+            width: calc(100% - 10px);
+        }
+
+        thead th {
+            width: 50%;
+        }
+
+        tbody td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="varContainer">
+        <div class="col">
+            <label for="nameVar">Nombre de variable</label><br>
+            <label for="varValue">Valor de variable</label>
+        </div>
+        <div class="col">
+            <input type="text" name="nameVar" id="nameVar"><br>
+            <input type="text" name="varValue" id="varValue">
+        </div>
+        <button onclick="setVariable()">Definir variable</button>
+    </div>
+
+    <br>
+    <h3>Variables</h3>
+    <table id="variables" border="2">
+        <thead>
+            <tr>
+                <th>Variable</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="func.js"></script>
+</body>
+</html>

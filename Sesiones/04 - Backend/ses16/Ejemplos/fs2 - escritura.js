@@ -10,4 +10,4 @@ let newData = [
 newData.push({ nombre: 'test3', carrera: 'ICD' });
 
 // Escribir archivos (local)
-fs.writeFileSync('datosAlumnos.txt', JSON.stringify(newData));
+fs.writeFileSync('datosAlumnos.json', JSON.stringify(newData));
